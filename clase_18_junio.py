@@ -103,3 +103,4 @@ print(cadena_de_texto + anio_del_curso)
 # 0   1  2  3  4  5 indices
 # -6 -5 -4 -3 -2 -1 indice inverso
 print(cadena_de_texto[-1])
+
