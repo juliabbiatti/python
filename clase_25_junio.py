@@ -35,3 +35,60 @@ variable_1 = 'Una variable'
 
 listita = [1, -10, 135.2, 'un string', variable_1]
 print(listita)
+
+print(listita[0])
+print(listita[-1])
+
+print(listita + [otra_lista, 'HOLA']) #CONCATENAR
+
+numeros = [1,2,3,4,5,6,7,8,9,10]
+print(numeros+[11,12,13,14,15,16,17,18,19,20]) #LAS LISTAS SON MUTABLES
+
+numeritos = [0, 2, 4, 5]
+numeritos[0] = 5 #REASIGNAR VALOR, LAS LISTAS SON MUTABLES (NO ASÍ LOS STRINGS)
+print(numeritos)
+
+#FUNCION APPEND, NOS PERMITE AGREGAR UN NUEVO ITEM AL FINAL DE LA LISTA
+
+numerillos = [1, 2, 3, 4, 5]
+numerillos.append(999)
+print(numerillos)
+
+numerillos = [1, 2, 3, 4, 5]
+numerillos.append(9*2) #LO MISMO CON CALCULOS
+print(numerillos)
+
+print(len(numerillos)) #contabiliza items
+
+#Funcion POP
+#Es lo contrario a APPEND, elimina el ultimo item
+
+'''equipos = ['River', 'Boca', 'Velez', 'Racing']
+equipos.pop()
+print(equipos) #ELIMINA A RACING'''
+
+equipos = [1, 2, 3, 4]
+equipos.pop(2) #ELIMINA EL ITEM QUE ESTA EN ESA POSICIÓN
+print(equipos) 
+
+#FUNCION COUNT
+
+numeros_varios = [1, 2, 3, 4, 5, 5, 4, 5]
+numeros_varios.count(5) #cuantas veces aparece el 5? devuelve 3
+print(numeros_varios.count(5))
+
+#FUNCION INDEX busca el item y nos dice en que índice está
+
+
+numeros_variados = [1, 2, 3, 4, 5, 5, 4, 5]
+numeros_variados.index(2) #en que posicion de la lista está el número 2? (en el 1)
+print(numeros_variados.index(2))
+
+
+#TUPLAS Colecciones de datos parecidas a las listas, son inmutables, a los arrays podiamos reasignarlos, a las tuplas no. Se utiliza para asegurarnos que los datos no se puedan modificar y evitar errores en el código. En vez de corchete se utiliza paréntesis.
+
+mi_tupla = (1, 2, 3)
+print(mi_tupla[0])
+
+#LAS FUNCIONES FUNCIONAN IGUAL QUE CON LOS ARRAYS, PERO CON PARENTESIS Y EL INDICE BUSCADO EN CORCHETE, pero no puede modificarse y reemplazarse los datos como con el array, ej no funciona el append, si se puede utilizar count, index, len, buscar el item
+
