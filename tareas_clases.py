@@ -80,3 +80,47 @@ print(tupla.index(5)) #La posición de alguno de los ítem
 print(list(tupla[-4:])) #Los últimos 4 ítem de la lista
 print(tupla.index(8)) #Ítem en la posición 8
 print(tupla.count(3)) #El número de veces que el número 3 se repite
+
+
+
+#CLASE 16 de Julio, analizar el código y explicar que hace cada linea, luego reemplazarlo por otra condición
+#WHILE
+
+n = 10 #La condición es 10
+while n<10: #Mientras la condición sea menor a 10
+    if (n%2)==0: 
+        print(n,"Es un numero par") #Imprimir es un número par si el residuo de la división de la constante por dos es 0
+    else:
+        print(n,"es un numero impar")  #Si el residuo no da 0, imprimir es un numero impar
+    n+=1 #Iteración incrementar de a 1
+#En este caso no ocurriría el bucle porque n es igual a 10, y el requisito para que esto ocurra es que sea menor a 10.
+
+n = 9 #En este caso sí nos da el resultado.
+while n<10:
+    if (n%2)==0:
+        print(n,"Es un numero par")
+    else:
+        print(n,"es un numero impar")
+    n+=1
+    
+
+
+
+#  IF ELSE ELIF
+# Construir un algoritmo con lo viste en clase bajo el mismo diagrama de flujo de la imagen que está en la carpeta assets del repo
+
+
+def inicio(selecciona):
+    if selecciona == "entrar":
+        print("Bienvenido al sistema")
+    elif selecciona == "saludo":
+        print("Hola! ¿Cómo estás?")
+    elif selecciona == "salir":
+        print("Saliendo del sistema")
+    else:
+        print("No se reconoce el comando")
+    
+inicio("entrar")
+inicio("saludo")
+inicio("salir")
+inicio("otra cosa")
