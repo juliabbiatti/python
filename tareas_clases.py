@@ -124,3 +124,28 @@ inicio("entrar")
 inicio("saludo")
 inicio("salir")
 inicio("otra cosa")
+
+# SETS
+# Es una variable grupo:
+#Añadir a las siguientes personas: Jose, Maria, Gerardo, Fabian
+#Eliminar a las personas: Fernando, Federico, Francisco
+
+grupo = {"Fernando", "Federico", "Francisco", "Ricardo"}
+
+grupo.update({"Jose", "Maria", "Gerardo", "Fabian"})
+
+grupo.difference_update({"Fernando", "Federico", "Francisco"})
+
+print(grupo)
+
+
+# DICCIONARIOS
+animalitos = {"elefante": ""}
+# Añadir al diccionario las claves perro, gato y tucan con sus valores "Tobi", "Michi" y "Diego"
+animalitos.update({"perro": "Tobi", "gato": "Michi", "tucan": "Diego"})
+
+
+# Modificar la clave elefante por delfin
+animalitos["delfin"] = animalitos.pop("elefante")
+
+print(animalitos)
