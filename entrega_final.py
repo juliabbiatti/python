@@ -32,11 +32,11 @@ letra = input("Introduzca una letra: ")
 print("Cantidad de veces que aparece la letra: ", cadena.count(letra))
 
 # 3.Escribe un programa que convierta un número decimal a binario y viceversa.
-numero_decimal = float(input("Introduce un número decimal: "))
+numero_decimal = float(input("Introduzca un número decimal: "))
 numero_binario = input("Introduzca un número binario: ")
 print("Decimal:", int(numero_binario, 2))
 print("Binario (solo parte entera):", bin(int(numero_decimal))[2:])
-numero_binario = input("Introduce un número binario: ")
+numero_binario = input("Introduzca un número binario: ")
 print("Decimal:", int(numero_binario, 2))
 
 
